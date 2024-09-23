@@ -69,3 +69,7 @@ class MasterViewset(viewsets.ModelViewSet):
         customer.update(payment=False)
 
         return Response(status=200)
+    
+
+
+                

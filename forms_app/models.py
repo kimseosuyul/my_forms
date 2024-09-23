@@ -9,7 +9,12 @@ class customer_list(models.Model):
     email = models.CharField(max_length=64)
     call_number = models.CharField(max_length=13)
     order_list = models.JSONField()
+    address = models.CharField(max_length=100, blank=True)
+    detail_address = models.CharField(max_length=100, blank=True)
+    zip_code = models.CharField(max_length=5, blank=True)
+    memo = models.TextField(blank=True)
     date = models.DateTimeField(auto_now_add=True)
     payment = models.BooleanField(default=False)
     random_id = models.CharField(max_length=8, blank=True)
-    
+
+
