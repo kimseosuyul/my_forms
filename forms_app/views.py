@@ -33,7 +33,7 @@ class ApiViewset(viewsets.ModelViewSet):
             detail_address = person_list['detailAddress'],
             zip_code = person_list['zipCode'],
             memo = person_list['memo'],
-            d_name = person_list['memo'],
+            d_name = person_list['d_name'],
             d_callNumber = person_list['d_callNumber'],
         )
 
