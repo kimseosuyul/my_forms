@@ -13,6 +13,8 @@ class customer_list(models.Model):
     detail_address = models.CharField(max_length=100, blank=True)
     zip_code = models.CharField(max_length=5, blank=True)
     memo = models.TextField(blank=True)
+    d_name = models.CharField(max_length=20, blank=True)
+    d_callNumber = models.CharField(max_length=20, blank=True)
     date = models.DateTimeField(auto_now_add=True)
     payment = models.BooleanField(default=False)
     random_id = models.CharField(max_length=8, blank=True)
