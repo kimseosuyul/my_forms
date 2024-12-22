@@ -30,12 +30,12 @@ class ApiViewset(viewsets.ModelViewSet):
             call_number = call_number,
             order_list = item_list,
             bank = person_list['bank'],
-            # address = person_list['address'],
-            # detail_address = person_list['detailAddress'],
-            # zip_code = person_list['zipCode'],
-            # memo = person_list['memo'],
-            # d_name = person_list['d_name'],
-            # d_callNumber = person_list['d_callNumber'],
+            address = person_list['address'],
+            detail_address = person_list['detailAddress'],
+            zip_code = person_list['zipCode'],
+            memo = person_list['memo'],
+            d_name = person_list['d_name'],
+            d_callNumber = person_list['d_callNumber'],
         )
 
         return Response(data={"amount":amount}, status=200,)
